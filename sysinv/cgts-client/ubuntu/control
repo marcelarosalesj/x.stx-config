@@ -1,4 +1,4 @@
-Source: cgtsclient
+Source: cgts-client
 Section: python
 Priority: extra
 Maintainer: Marcela Rosales <marcelarosalesj@gmail.com>

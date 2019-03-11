@@ -2,7 +2,7 @@ NAME ?= "cgts-client"
 DEBMAKE ?= "python"
 SRC_PATH ?= "../cgts-client"
 all:
-	../../../autodeb/autodeb/autodeb -n $(NAME) -b $(DEBMAKE) -p $(SRC_PATH)
+	../../../../autodeb/autodeb/autodeb -n $(NAME) -b $(DEBMAKE) -p $(SRC_PATH)
 	sudo cp results/*.deb /usr/local/mydebs/
 clean:
 	rm -rf results/
