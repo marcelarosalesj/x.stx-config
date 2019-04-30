@@ -1,0 +1,31 @@
+Source: controllerconfig
+Section: unknown
+Priority: extra
+Maintainer: Marcela Rosales <marcelarosalesj@gmail.com>
+Build-Depends: python-setuptools,
+               python-all,
+               debhelper,
+               dh-python,
+               python-pip,
+               python-wheel
+Depends: python-pyudev,
+         psmisc,
+         systemd,
+         python-cryptography,
+         python-keyring,
+         python-netifaces,
+         python-iso8601,
+         python-pysnmp4,
+         python-netaddr,
+         python-six,
+         python-yaml,
+         python-oslo-utils,
+         tsconfig,
+         sysinv,
+         fm-api
+
+Standards-Version: 3.9.6
+Package: controllerconfig
+Architecture: all
+Depends: ${misc:Depends}, ${python:Depends}
+Description: This package contains the fm-api project.
