@@ -1,0 +1,16 @@
+NAME ?= "sysinv"
+DEBMAKE ?= "python"
+SRC_PATH ?= "../sysinv"
+all: clean
+	../../../../autodeb/autodeb/autodeb -n $(NAME) -b $(DEBMAKE) -p $(SRC_PATH)
+	sudo cp results/*.deb /usr/local/mydebs/
+clean:
+	rm -rf results/
+	rm -rf *.tar.gz
+	rm -rf $(NAME)-0.0/
+	rm -rf *.deb
+	rm -rf *.debian.tar.xz
+	rm -rf *orig.tar.gz
+	rm -rf *.changes
+	rm -rf *.dsc
+	rm -rf *.build
