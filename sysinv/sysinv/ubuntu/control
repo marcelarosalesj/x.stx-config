@@ -10,7 +10,13 @@ Build-Depends: python-setuptools,
                python-wheel,
                python-pip,
                systemd
-Depends: python-docker,
+
+Standards-Version: 3.9.6
+Package: sysinv
+Architecture: all
+Depends: ${misc:Depends},
+         ${python:Depends},
+         python-docker,
          python-parted,
          python-six,
          python-pyudev,
@@ -33,9 +39,4 @@ Depends: python-docker,
          python-pytest,
          python-testtools,
          tsconfig
-
-Standards-Version: 3.9.6
-Package: sysinv
-Architecture: all
-Depends: ${misc:Depends}, ${python:Depends}
 Description: This package contains the sysinv project.
