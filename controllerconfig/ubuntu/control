@@ -8,7 +8,13 @@ Build-Depends: python-setuptools,
                dh-python,
                python-pip,
                python-wheel
-Depends: python-pyudev,
+
+Standards-Version: 3.9.6
+Package: controllerconfig
+Architecture: all
+Depends: ${misc:Depends},
+         ${python:Depends},
+         python-pyudev,
          psmisc,
          systemd,
          python-cryptography,
@@ -23,9 +29,4 @@ Depends: python-pyudev,
          tsconfig,
          sysinv,
          fm-api
-
-Standards-Version: 3.9.6
-Package: controllerconfig
-Architecture: all
-Depends: ${misc:Depends}, ${python:Depends}
-Description: This package contains the fm-api project.
+Description: This package contains the controllerconfig project.
