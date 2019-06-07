@@ -1,7 +1,6 @@
 Source: sysinv
-Section: unknown
 Priority: extra
-Maintainer: Marcela Rosales <marcelarosalesj@gmail.com>
+Maintainer: Marcela Rosales <marcela.a.rosales.jimenez@intel.com>
 Build-Depends: python-setuptools,
                python-all,
                debhelper,
@@ -10,8 +9,8 @@ Build-Depends: python-setuptools,
                python-wheel,
                python-pip,
                systemd
-
 Standards-Version: 3.9.6
+
 Package: sysinv
 Architecture: all
 Depends: ${misc:Depends},
@@ -39,4 +38,4 @@ Depends: ${misc:Depends},
          python-pytest,
          python-testtools,
          tsconfig
-Description: This package contains the sysinv project.
+Description: This package contains the StarlingX sysinv project.
