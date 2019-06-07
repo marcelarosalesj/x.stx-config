@@ -11,11 +11,19 @@ Build-Depends: python-setuptools,
                python-httplib2,
                python-dateutil,
                python-neutronclient,
+               python-six,
                python-mock
 Standards-Version: 3.9.6
 
 Package: cgts-client
 Architecture: all
 Depends: ${misc:Depends},
-         ${python:Depends}
+         ${python:Depends},
+         python-yaml,
+         python-httplib2,
+         python-prettytable,
+         bash-completion,
+         python-neutronclient,
+         python-keystoneclient,
+         python-six
 Description: This package contains the cgts-client project.
