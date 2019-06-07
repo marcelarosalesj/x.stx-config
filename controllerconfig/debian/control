@@ -1,15 +1,14 @@
 Source: controllerconfig
-Section: unknown
 Priority: extra
-Maintainer: Marcela Rosales <marcelarosalesj@gmail.com>
+Maintainer: Marcela Rosales <marcela.a.rosales.jimenez@intel.com>
 Build-Depends: python-setuptools,
                python-all,
                debhelper,
                dh-python,
                python-pip,
                python-wheel
-
 Standards-Version: 3.9.6
+
 Package: controllerconfig
 Architecture: all
 Depends: ${misc:Depends},
